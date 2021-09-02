@@ -1,0 +1,16 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+h2 {
+    color: red;
+    font-size: 20px;
+    margin-top: 50px;
+}
+img {
+    width: 250px;
+    height: 175px;
+    border-radius: 50%;
+    
+}
