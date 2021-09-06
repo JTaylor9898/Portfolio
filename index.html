@@ -1,15 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style1.css">
-    <title>Document</title>
+    <title>JT's Portfolio</title>
+
 </head>
 <body>
+    
     <h1>Joshua Taylor's Portfolio</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openQuality(event, 'Biblical Studies')">Biblical Studies</button>
+        <button class="tablinks" onclick="openQuality(event, 'Car Mechanics')">Car Mechanics</button>
+        <button class="tablinks" onclick="openQuality(event, 'Basketball')">Basketball</button>
+        <button class="tablinks" onclick="openQuality(event, 'Photography')">Photography</button>
+    </div>
+    <div id="Biblical Studies" class="tabcontent">
+        <h3>Biblical Studies</h3>
+        <p>I have a huge passion for studying the Bible.</p>
+    </div>
+          
+    <div id="Car Mechanics" class="tabcontent">
+        <h3>Car Mechanics</h3>
+        <p>I have rebuilt the motor of my 300zx.</p> 
+    </div>
+          
+    <div id="Basketball" class="tabcontent">
+        <h3>Bball</h3>
+        <p>I enjoy playing pickup games on Tuesday.</p>
+    </div>
+    <div id="Photography" class="tabcontent">
+        <h3>My Photography</h3>
+        <p>I am a part of the VAPA program.</p>
+    </div>
     <h2> Welcome to my website!</h2>
+
     <img src="the_cross.jfif" alt="my_image">
+    <div id="summary">
+        <p>This is meant to be a showcase of my skills <br>
+            as a front-end developer. <br>
+            Clearly, I need to practice more. lol</p>
+        <p>My desire is to develop my skills in order <br>
+            to become a useful tool in God's Kingdom.</p>
+    </div>
+    <p id="p3" style="background-image: url('backdrop.jfif'); background-repeat: no-repeat; background-position: right;"> 
+        I also like to take photos of nature.<br>
+        I am not skilled with photoshop,<br> 
+        but I can line up a good shot.</p>
+    
+          
+    
+    <script>
+        function openQuality(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 </body>
 </html>

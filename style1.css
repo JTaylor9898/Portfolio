@@ -12,5 +12,57 @@ img {
     width: 250px;
     height: 175px;
     border-radius: 50%;
-    
 }
+#summary {
+  border: 1px solid blanchedalmond;
+  background-color: blanchedalmond;
+  background-position: 1ch 8em;
+}
+
+#p3 {
+    text-align: right;
+    color: rgb(4, 0, 5);
+    background-size: 7cm;
+}
+/*html {background-color: lightskyblue;}*/
+html {background-image: url('colorful_background.jpg');}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid ;
+    background-color: rgb(128, 128, 243);
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(252, 52, 52);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(247, 73, 73);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid blanchedalmond;
+  
+    background-color: blanchedalmond;
+    border-top: none;
+  }
+  
